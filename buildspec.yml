@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+      - npm install
+  build:
+    commands:
+      - echo "Building the application"
+      - echo "Build successful!"
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+  base-directory: .   # Output is stored in the root directory
+  name: my-sample-app.zip
+
